@@ -4,16 +4,16 @@ import SingleView from './single-view';
 import ListView from './list-view';
 import Profile from './profile-constructor';
 import myArtists from './profile-constructor';
+import AddContactForm from './form-view';
 
 
 
 function renderListView(){
 ReactDOM.render(
-	<ListView users={myArtists} onSelect={renderSingleView}/>
+	<ListView users={myArtists} onSelect={renderSingleView} onNew={renderForm} />
 	, document.querySelector('.app')
 	);	
 }
-
 
 
 
@@ -24,5 +24,21 @@ ReactDOM.render(
 	);
 }
 
+
+
+function addContactAndRenderList(newItem) {
+  Profile.push(newItem);
+  renderListView();
+}
+
+function renderForm() {
+ReactDOM.render(
+	<AddContactForm onAdd={addContactAndRenderList} onBack={renderListView}/>
+	, document.querySelector('.app')
+	);
+	}
+
+
 renderListView();
+
 

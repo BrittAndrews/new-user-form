@@ -1,1 +1,233 @@
 @import 'font-awesome';
+
+body{	
+	background-color: #E7C1D2;
+}
+
+.app{
+
+	margin: 0;
+	height: 100vh;
+}
+
+
+ul {
+
+	list-style-type: none;
+}
+
+
+
+
+// LISTVIEW//////////////////
+
+.list-view-wrapper{
+	margin-top: 50px;
+	margin-left: 50px;
+	font-family: sans-serif;
+	width: 450px;
+	height: 600px;
+	overflow: scroll;
+	border: 1px solid black;
+	border-radius: 15px;
+	// background-color: #93939F;
+	background-color: white;
+	color: #93939F;
+	position: relative;
+
+
+}
+
+.LV-header p{
+	padding-bottom: 15px;
+	border-bottom: 1px dotted black;
+	font-weight: bold;
+}
+
+.LV-header{
+
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 50px;
+}
+
+
+.LV-header button{
+	text-decoration: none;
+	border: none;
+	background: none;
+	color: #58FAD0;
+	font-size: large;
+	font-weight: bold;
+	margin: 0;
+	padding:0;
+}
+
+.LV-header button:hover{
+	color: #B8E297; 
+	}
+
+.LV-header span:hover{
+	color: #B8E297;
+	}
+
+.LV-header span{
+	color: #58FAD0;
+	font-size: large;
+	font-weight: bold;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+
+.LV-username img {
+
+	width: 50px;
+	height: 50px;
+	margin-right: 25px;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	border-radius: 25px;
+	object-fit: cover;
+}
+
+.LV-username li:hover {
+	color: #B8E297;
+
+
+}
+
+
+.LV-username img:hover {
+	opacity: 0.4;
+
+}
+
+
+// SINGLEVIEW////////////////
+
+.single-view-wrapper{
+	margin-top: 50px;
+	margin-left: 50px;
+	font-family: sans-serif;
+	width: 450px;
+	height: 600px;
+	overflow: scroll;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: black;
+	color: white;
+
+}
+
+.single-view-wrapper li {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 100px;
+	margin-bottom: 10px;
+}
+
+.single-view-wrapper li:hover{
+	color: #B8E297;
+}
+
+
+.SV-header img {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	object-fit: cover;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+
+button {
+	margin-left: 15px;
+	vertical-align: top;
+	margin-top: 25px;
+}
+
+
+
+
+.single-view-wrapper li{
+	margin-left: 40px;
+}
+
+
+// FORMVIEW////////////////
+
+
+.form-view{
+	margin-top: 50px;
+	margin-left: 50px;
+	font-family: sans-serif;
+	width: 450px;
+	height: 600px;
+	overflow: scroll;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: black;
+	color: white;
+
+}
+
+.form-view h1 {
+	margin-left:50px;
+	margin-bottom: 50px;
+}
+
+.formfields {
+	margin-left:50px;
+	margin-bottom: 10px;
+
+}
+
+.form-view button{
+	margin-left:50px;
+}
+
+label{
+	display:flex;
+	justify-content:space-between;
+	margin-right: 80px;
+}
+
+input {
+	width: 200px;
+}
+
+.form-view button{
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 5px;
+	background: none;
+	color: #58FAD0;
+	font-size: large;
+	font-weight: bold;
+	margin: 0;
+	padding:5px;
+	margin-top: 15px;
+	margin-left: 50px;
+
+}
+
+
+.form-view button:hover{
+	color: #B8E297; 
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+

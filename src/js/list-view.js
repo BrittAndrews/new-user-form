@@ -11,7 +11,8 @@ export default class ListView extends React.Component {
 
 		})),
 
-		onSelect: PropTypes.func//.isRequired
+		onSelect: PropTypes.func ,
+		onNew: PropTypes.func.isRequired,
 
 	}
 
@@ -24,19 +25,28 @@ getUser(user){
 
 
 render(){
-	let { users } = this.props;
+	let { users, onNew } = this.props;
 
 	return (
 
 		<div className ="list-view-wrapper">
+			
 			<div className="LV-header">
 				<p>CONTACTS</p>
+				<button onClick={onNew}> <i className="fa fa-plus-circle"></i> Add New </button>
+					<br/>
+				<span> <i className="fa fa-arrow-circle-o-down">  </i> Scroll for More</span>
+
+			
 			</div>
+
 
 			<ul className="LV-username">
 			
 			{ users.map(this.getUser.bind(this))}
 			</ul>
+
+
 
 		</div>
 
