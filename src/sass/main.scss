@@ -1,13 +1,18 @@
 @import 'font-awesome';
 
+
+
+
 body{	
-	background-color: #E7C1D2;
+	background-color: white;
 }
 
 .app{
 
 	margin: 0;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
 }
 
 
@@ -23,12 +28,11 @@ ul {
 
 .list-view-wrapper{
 	margin-top: 50px;
-	margin-left: 50px;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	width: 450px;
 	height: 600px;
 	overflow: scroll;
-	border: 1px solid black;
+	border: 2px solid #E7C1D2;
 	border-radius: 15px;
 	// background-color: #93939F;
 	background-color: white;
@@ -38,10 +42,9 @@ ul {
 
 }
 
-.LV-header p{
+.LV-header h1{
 	padding-bottom: 15px;
-	border-bottom: 1px dotted black;
-	font-weight: bold;
+	color: black;
 }
 
 .LV-header{
@@ -67,17 +70,7 @@ ul {
 	color: #B8E297; 
 	}
 
-.LV-header span:hover{
-	color: #B8E297;
-	}
 
-.LV-header span{
-	color: #58FAD0;
-	font-size: large;
-	font-weight: bold;
-	margin: 0;
-	font-family: sans-serif;
-}
 
 
 .LV-username img {
@@ -108,15 +101,14 @@ ul {
 
 .single-view-wrapper{
 	margin-top: 50px;
-	margin-left: 50px;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	width: 450px;
 	height: 600px;
 	overflow: scroll;
-	border: 1px solid black;
+	border: 2px solid #E7C1D2;
 	border-radius: 15px;
-	background-color: black;
-	color: white;
+	background-color: white;
+	// color: white;
 
 }
 
@@ -162,15 +154,14 @@ button {
 
 .form-view{
 	margin-top: 50px;
-	margin-left: 50px;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	width: 450px;
 	height: 600px;
 	overflow: scroll;
-	border: 1px solid black;
+	border: 2px solid #E7C1D2;
 	border-radius: 15px;
-	background-color: black;
-	color: white;
+	background-color: white;
+	// color: white;
 
 }
 
@@ -184,6 +175,7 @@ button {
 	margin-bottom: 10px;
 
 }
+
 
 .form-view button{
 	margin-left:50px;
@@ -199,9 +191,27 @@ input {
 	width: 200px;
 }
 
+// .drop-zone{
+// 	margin-left: 50px;
+// 	width: 400px;
+// 	border: 1px solid red;
+// }
+
+.formfields img {
+	width: 200px;
+
+}
+
+.button {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 50px;
+}
+
+
 .form-view button{
 	text-decoration: none;
-	border: 1px solid white;
+	border: 1px solid gray;
 	border-radius: 5px;
 	background: none;
 	color: #58FAD0;
@@ -218,6 +228,8 @@ input {
 .form-view button:hover{
 	color: #B8E297; 
 	}
+
+
 
 
 

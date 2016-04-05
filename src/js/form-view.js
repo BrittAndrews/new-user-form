@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import SSF from 'react-simple-serial-form';
+import Dropzone from 'react-dropzone';
 
 
 
@@ -10,9 +11,24 @@ export default class addContactForm extends Component {
 
   }
 
+  constructor(props){
+  	super(props)
+  		this.state = {
+  			preview: " http://www.offaxis.co.uk/themes/shared/common/images/placeholder.png " 
+  	}
+  }
+
   dataHandler(contactFormData) {
     this.props.onAdd(contactFormData);
   }
+
+
+  dropHandler([file]){
+  	 this.setState({preview: file.preview});
+  }
+
+
+
 
   render() {
 
@@ -50,14 +66,29 @@ export default class addContactForm extends Component {
             </label>
           </div>
 
+          <br/> <br/>
+
           <div className="formfields">
-            <label>
-              Photo URL:
-              <input type="URL" name="photo"/>
-            </label>
+
+          	<p> drag & drop a file to add a photo </p>
+
+
+              <input type="hidden" value={ this.state.preview } name="photo"/>
+              	<Dropzone onDrop={ ::this.dropHandler }>
+              		<img src={ this.state.preview }/>
+             	 </Dropzone>
+
+           
+
+
+
           </div>
 
+
+          <div className="button">
           <button>Save!</button>
+          </div>
+
         </SSF>
       </div>
     );

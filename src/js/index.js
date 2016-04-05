@@ -5,6 +5,7 @@ import ListView from './list-view';
 import Profile from './profile-constructor';
 import myArtists from './profile-constructor';
 import AddContactForm from './form-view';
+import Dropzone from 'react-dropzone';
 
 
 
@@ -33,10 +34,10 @@ function addContactAndRenderList(newItem) {
 
 function renderForm() {
 ReactDOM.render(
-	<AddContactForm onAdd={addContactAndRenderList} onBack={renderListView}/>
+	<AddContactForm onAdd={addContactAndRenderList}  />
 	, document.querySelector('.app')
 	);
-	}
+}
 
 
 renderListView();

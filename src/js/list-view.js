@@ -32,10 +32,10 @@ render(){
 		<div className ="list-view-wrapper">
 			
 			<div className="LV-header">
-				<p>CONTACTS</p>
+				<h1>CONTACTS</h1>
 				<button onClick={onNew}> <i className="fa fa-plus-circle"></i> Add New </button>
 					<br/>
-				<span> <i className="fa fa-arrow-circle-o-down">  </i> Scroll for More</span>
+		
 
 			
 			</div>
@@ -45,7 +45,6 @@ render(){
 			
 			{ users.map(this.getUser.bind(this))}
 			</ul>
-
 
 
 		</div>
