@@ -235,6 +235,40 @@ input {
 
 
 
+////////////MAIN DOT JS PAGE//////////////
+
+
+
+.main{
+	height:100%;
+
+}
+
+
+.main nav{
+	width:450px;
+	margin-top: 25px;
+	display:flex;
+	justify-content:space-around;
+	border:1px solid black;
+	padding-bottom:20px;
+	padding-top:20px;
+}
+
+
+.navlinks{
+	text-decoration: none;
+	font-family: helvetica;
+	color:black;
+
+}
+
+.navlinks:hover{
+	color:red;
+	font-weight: bold;
+}
+
+
 
 
 

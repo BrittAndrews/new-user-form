@@ -71,7 +71,7 @@ export default class ListView extends Component {
 
 getUser(user){
 	return <li key={user.name}> 
-			<Link to='/singleview'>
+			<Link to={`/singleview/${user.name}`}>
 			<img src={user.photo}/>
 			{user.name}
 			</Link>

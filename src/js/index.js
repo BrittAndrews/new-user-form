@@ -5,8 +5,9 @@ import ListView from './list-view';
 import Profile from './profile-constructor';
 import myArtists from './profile-constructor';
 import AddContactForm from './form-view';
+import Main from './main';
 import Dropzone from 'react-dropzone';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import cookie from 'js-cookie';
 
@@ -58,9 +59,11 @@ console.log( cookie.get('anything-key') );
 // router stuff ///////////////////////////////////////////////////////////////
 render((
   <Router history={hashHistory}>
-    <Route path="/" component={ListView}/>
-    <Route path="/singleview" component={SingleView}/>
-    <Route path="/addcontact" component={AddContactForm}/>
+    <Route path="/" component={Main}>
+      <IndexRoute component={ListView}/>
+			<Route path="/singleview/:user_name" component={SingleView}/>
+    	<Route path="/addcontact" component={AddContactForm}/>
+    </Route>
   </Router>
 ), document.querySelector('.app'));
 

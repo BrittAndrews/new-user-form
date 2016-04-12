@@ -67,7 +67,8 @@ import users from './profile-constructor';
 
 export default class SingleView extends Component {
 render(){
-	var user = users[0];
+	let { user_name } = this.props.params;
+	let user = users.find(user => user.name === user_name);
 	return (
 
 		<div className ="single-view-wrapper">
